@@ -20,9 +20,13 @@ The data pipeline utilizes Kafka or any messaging queue system to simulate a pro
 The data pipeline consists of the following stages:
 
 Source: JSON data is generated from multiple sources (client websites) using a Kafka producer concept. Producers broadcast JSON data as messages to a Kafka topic.
+
 Ingestion: Data broadcasted by producers is received and persisted by Kafka brokers. Messages are buffered until they reach a threshold size, then written to JSON files and pushed to an Amazon S3 bucket.
+
 Raw Data: The JSON files and CSV containing security definitions are stored in an S3 bucket. AWS Glue is used to define tables for the data.
+
 ETL (Extract, Transform, Load): Data undergoes preprocessing and transformation stages using AWS Glue. Joins and aggregations are performed to identify potential DDoS attacks.
+
 Visualization: The processed data is visualized using various analytics tools, allowing for analysis based on location, date, and client (website). Key performance indicators (KPIs) related to DDoS attacks are presented through static and interactive visualizations.
 
 # KPI Metrics
