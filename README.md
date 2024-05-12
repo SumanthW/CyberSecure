@@ -1,5 +1,4 @@
-# CyberSecure
-# Cyber Security Company Data Pipeline
+# CyberSecure - Data Engineering
 
 # Overview
 This repository contains a simulation of a cyber security company's data analysis pipeline. The company receives JSON files from clients (websites) and analyzes them in the cloud based on threshold definitions provided by the clients. The primary goal is to detect and mitigate Distributed Denial of Service (DDoS) attacks by analyzing event-level data and security specifications.
@@ -28,6 +27,9 @@ Raw Data: The JSON files and CSV containing security definitions are stored in a
 ETL (Extract, Transform, Load): Data undergoes preprocessing and transformation stages using AWS Glue. Joins and aggregations are performed to identify potential DDoS attacks.
 
 Visualization: The processed data is visualized using various analytics tools, allowing for analysis based on location, date, and client (website). Key performance indicators (KPIs) related to DDoS attacks are presented through static and interactive visualizations.
+
+![Oncloud](https://github.com/SumanthW/CyberSecure/assets/128551121/37baf787-53d5-48dd-94ca-4cf23676f335)
+
 
 # KPI Metrics
 Key performance indicators include the count of DDoS attacks over time, trends in the number of attacks, popular attack locations, average attack length, and average number of clicks per attack.
