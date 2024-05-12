@@ -30,9 +30,34 @@ Visualization: The processed data is visualized using various analytics tools, a
 
 ![Oncloud](https://github.com/SumanthW/CyberSecure/assets/128551121/37baf787-53d5-48dd-94ca-4cf23676f335)
 
+# ETL
+
+ETL is carried out by AWS Glue job which does multi step transformation of data
+
+Stage 1: The raw data in JSON needs appropriate type conversion as we may need to type-specific-functions like year extraction etc.,
+In this stage, type conversion and Anamoly suspicion is marked based on details from ddos specs table.
+![Screenshot 2024-04-19 221517](https://github.com/SumanthW/CyberSecure/assets/128551121/645edf39-be10-49df-8176-aa93ec320db2)
+
+Stage 2:
+In this stage the number of bad connections is counted
+![Screenshot 2024-04-19 221604](https://github.com/SumanthW/CyberSecure/assets/128551121/09ae657e-0374-40f0-8e54-86db4e88c5b2)
+
+Stage 3:
+In this stage the suspected bad connections are assessed and marked as anamoly confirmed based on threshold defined for the time window. 
+For simplicity we are considering 1 day as time window.
+![Screenshot 2024-04-19 221640](https://github.com/SumanthW/CyberSecure/assets/128551121/4d26864f-728e-4d72-9748-3b00cbc96577)
+
+Final table:
+Results for analytical queries are added in final table.
 
 # KPI Metrics
 Key performance indicators include the count of DDoS attacks over time, trends in the number of attacks, popular attack locations, average attack length, and average number of clicks per attack.
+
+![image](https://github.com/SumanthW/CyberSecure/assets/128551121/4b51a8cb-79d8-4393-81b0-9f4c825e0a1d)
+
+# Visualization
+
+Final Dashboard link -> ![link](https://public.tableau.com/app/profile/sumanth.wannur/viz/CyberSecureDashboard/Dashboard1)
 
 # Repository Structure
 src/: Contains source code for data generation, ingestion, preprocessing, and visualization.
