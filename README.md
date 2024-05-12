@@ -58,16 +58,3 @@ Key performance indicators include the count of DDoS attacks over time, trends i
 # Visualization
 
 Final Dashboard link -> [link](https://public.tableau.com/app/profile/sumanth.wannur/viz/CyberSecureDashboard/Dashboard1)
-
-# Repository Structure
-src/: Contains source code for data generation, ingestion, preprocessing, and visualization.
-data/: Placeholder for sample data files.
-docs/: Documentation files, including this README.
-scripts/: Additional scripts or utilities used in the pipeline.
-tests/: Unit tests for pipeline components.
-
-# Usage
-Clone the repository.
-Install required dependencies.
-Configure Kafka and AWS credentials.
-Run the data pipeline scripts in the appropriate order.
