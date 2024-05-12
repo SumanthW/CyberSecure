@@ -57,7 +57,7 @@ Key performance indicators include the count of DDoS attacks over time, trends i
 
 # Visualization
 
-Final Dashboard link -> ![link](https://public.tableau.com/app/profile/sumanth.wannur/viz/CyberSecureDashboard/Dashboard1)
+Final Dashboard link -> [link](https://public.tableau.com/app/profile/sumanth.wannur/viz/CyberSecureDashboard/Dashboard1)
 
 # Repository Structure
 src/: Contains source code for data generation, ingestion, preprocessing, and visualization.
